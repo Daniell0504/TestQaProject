@@ -9,12 +9,11 @@ public class AccountCreatedPage extends BasePage {
         this.driver = driver;
     }
 
-    private By paragraphElement = By.xpath("//div[@id='content']/p(2)");
+    private By paragraphElement = By.xpath("//div[@id='content']/p[2]");
 
     public String getParagraphText() {
         return driver.findElement(paragraphElement).getText();
     }
-
 
 
 
